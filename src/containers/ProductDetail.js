@@ -11,6 +11,7 @@ const ProductDetail = () => {
   const dispatch = useDispatch();
   console.log(product);
 
+  useEffect(() => {
   const fetchProductDetail = async () => {
     const response = await axios
     .get(`https://fakestoreapi.com/products/${productId}`)
@@ -19,15 +20,13 @@ const ProductDetail = () => {
     });
     dispatch(selectedProducts(response.data));
   };
-
-  useEffect(() => {
     if(productId && productId !== ''){
       fetchProductDetail();
     }
     return () =>{
       dispatch(removeSelectedProducts());
     };
-  }, [productId]);
+  }, [dispatch, productId]);
 
   return (
     <div className="ui grid container">
@@ -44,7 +43,7 @@ const ProductDetail = () => {
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a className="ui teal tag label" href="">${price}</a>
+                  <a className="ui teal tag label" href="#None">${price}</a>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>

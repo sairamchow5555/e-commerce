@@ -8,6 +8,7 @@ const ProductListing = () => {
     const products = useSelector((state) => state.allProducts.products);
     const dispatch = useDispatch();
 
+    useEffect(()=>{
     const fetchProducts = async () => {
         const response = await axios
         .get("https://fakestoreapi.com/products")
@@ -16,10 +17,8 @@ const ProductListing = () => {
         });
         dispatch(setProducts(response.data));
     };
-    
-    useEffect(()=>{
-        fetchProducts()
-    }, []);
+        fetchProducts();
+    }, [dispatch]);
 
     console.log("Products is:",products);
   return (
