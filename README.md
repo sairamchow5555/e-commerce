@@ -1,3 +1,10 @@
+
+![Screenshot 2023-11-20 at 5 00 21 PM](https://github.com/sairamchow5555/e-commerce/assets/126855559/ba030f3d-4dd3-4c52-b184-a6f9986b78df)
+
+![Screenshot 2023-11-20 at 5 01 32 PM](https://github.com/sairamchow5555/e-commerce/assets/126855559/a456a4f5-6894-47c7-9b7b-f344d1860d04)
+
+![Screenshot 2023-11-20 at 5 00 38 PM](https://github.com/sairamchow5555/e-commerce/assets/126855559/23266129-bbc6-4f28-8ff5-d0d9936863c1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
